@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+    font-family: "Open Sans",arial,sans-serif;
+    background-image: url("../img/QuadBW.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-color: transparent;
+    height: 67.5rem;
+    width: 120rem;
+    z-index:2;
+}
+
+.navbar {
+    margin-bottom: 0;
+    position: fixed;
+    height: 5rem;
+    width:100%;
+    top:0;
+    min-height: 50px;
+}
+
+#headerImage{
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+    width: 80rem;
+    height: 30rem;
+    background-image: url("../img/IMG_0187.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    width:15rem;
+    top:0;
+ }
+
+#name {
+    position: absolute;
+    top:0.5rem;
+    left:1.8rem;
+    height: 2rem;
+    width: 5rem;
+}
+
+#footer {
+    height:6rem;
+    background-color: #101010;
+    width: 100%;
+    z-index: 10;
+    left:0;
+    bottom: 0;
+    position: fixed;
+}
+
+#footer a img {
+    box-sizing: border-box;
+    margin-top:0.5rem;
+    height: 4rem;
+    width: 4rem;
+    left: 102rem;
+    position: relative;
+}
+
+#media {
+    position:absolute;
+    width:80rem;
+    left:20rem;
+    top:34rem;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height:34.75rem;
+}
+
+#left {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 39rem;
+    height: 100%
+}
+#right {
+    background-color: white;
+    position: absolute;
+    left:39rem;
+    height: 100%;
+    width: 39rem;
+}
+
+#leftTitle, #rightTitle {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#sponsor {
+    position:absolute;
+    width:80rem;
+    left:20rem;
+    top:68rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+    z-index: 4;
+    background-color: white;
+    overflow: hidden;
+}
+
+#sponsor img {
+    max-width: 18rem;
+    max-height: 18rem;
+    min-height: 5rem;
+    min-width: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#sponsor img:hover {
+    opacity: 0.7;
+    background-color: gray;
+}
+
+#sponsor hr {
+    box-shadow: 0px 3.9rem 5rem 3.8rem rgba(245, 245, 245, 0.9)
+}
+
+#sponsorThankYou {
+    text-align: center;
+    font-size: 2.5rem;
+    left:2rem;
+    position: absolute;
+    height:5rem;
+    width:36rem;
+}
+
+#sponsorIntro {
+    font-size: 2rem;
+    font-weight:300;
+    left:2rem;
+    position: absolute;
+    top:5rem;
+    height:20rem;
+}
+
+#sponsorContact{
+    font-size: 1.5rem;
+    left:2rem;
+    position: absolute;
+    top:25rem;
+    height: 10rem;
+}
+
+#sponsorTitle {
+    height:35rem;
+    width:40rem;
+    position: absolute;
+    left:20rem;
+    top: 34rem;
+    z-index: 9;
+    background-color: white;
+}
+
+#sponsorImage {
+    height:35rem;
+    width:40rem;
+    position: absolute;
+    left:60rem;
+    top:34rem;
+    background-color: white;
+    z-index: 7;
+}
+
+#sponsorImage img {
+    height: 30rem;
+    width: 30rem;
+    left:7rem;
+    position: absolute;
+    top: 2.5rem;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: whitesmoke;
+    transform: rotate(5deg);
+    box-shadow: 0.5rem 0.5rem 0.8rem -0.4rem #808080;
+}
+
+#sponsorImage p {
+    font-size: 1rem;
+    font-style: italic;
+    position: absolute;
+    top:32.5rem;
+    left:4rem;
+    transform: rotate(5deg);
+}
+
+.level {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.team {
+    color: #5E3996;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.competition {
+    color:#85C660;
+    font-size: 1.5rem;
+    margin: 0;
+}
