@@ -39,7 +39,40 @@ ecoCarApp
     })
 
     .controller('mainController', function($scope) {
-
+        $scope.navLinks = [
+            {
+                name: 'Home',
+                url: '#/'
+            },
+            {
+                name: 'Projects',
+                url: '#projects'
+            },
+            {
+                name: 'Team',
+                url: '#team'
+            },
+            {
+                name: 'Sponsors',
+                url: '#sponsors'
+            },
+             {
+                name: 'Media',
+                url: '#media'
+            },
+            {
+                name: 'Apply',
+                url: 'https://catalyst.uw.edu/catalyst/chooser/1d95b7f6290c057640861012dec50856'
+            },
+            {
+                name: 'EC2',
+                url: '#ec2'
+            },
+            {
+                name: 'Contact Us',
+                url: '#contacts'
+            }
+        ];
     })
 
     .controller('homeController', function($scope) {

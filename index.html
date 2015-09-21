@@ -23,16 +23,20 @@
                                                                                                   id="logo"></a>
             </div>
             <div class="collapse navbar-collapse navbar-main-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right" role="tablist">
-                    <li data-menuanchor="2" id="projectMenu"><a href="#projects">Projects</a></li>
-                    <li data-menuanchor="3" id="modelMenu"><a href="#team">Team</a></li>
-                    <li data-menuanchor="4" id="sponsorMenu"><a href="#sponsors">Sponsors</a></li>
-                    <li data-menuanchor="5" id="mediaMenu"><a href="#media">Media</a></li>
-                    <li data-menuanchor="6" id="applyMenu"><a
+                <ul class="nav navbar-nav navbar-right" role="tablist" ng-repeat="link in navLinks | orderBy: '-' ">
+                    <li><a href='{{link.url}}'>{{link.name}}</a></li>
+                    <!--
+                    <li data-menuanchor="2" id="homeMenu"><a href="#/">Home</a></li>
+                    <li data-menuanchor="3" id="projectMenu"><a href="#projects">Projects</a></li>
+                    <li data-menuanchor="4" id="modelMenu"><a href="#team">Team</a></li>
+                    <li data-menuanchor="5" id="sponsorMenu"><a href="#sponsors">Sponsors</a></li>
+                    <li data-menuanchor="6" id="mediaMenu"><a href="#media">Media</a></li>
+                    <li data-menuanchor="7" id="applyMenu"><a
                             href="https://catalyst.uw.edu/catalyst/chooser/1d95b7f6290c057640861012dec50856">Apply</a>
                     </li>
-                    <li data-menuanchor="7" id="ec2Menu"><a href="#ec2">EC2</a></li>
-                    <li data-menuanchor="8" id="contactMenu"><a href="#contacts">Contact Us</a></li>
+                    <li data-menuanchor="8" id="ec2Menu"><a href="#ec2">EC2</a></li>
+                    <li data-menuanchor="9" id="contactMenu"><a href="#contacts">Contact Us</a></li>
+                    -->
                 </ul>
             </div>
         </div>
