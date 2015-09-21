@@ -1,0 +1,133 @@
+#sponsorHeaderImage{
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+    width: 80rem;
+    height: 30rem;
+    background-image: url("../img/IMG_0187.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sponsorList {
+    position:absolute;
+    width:80rem;
+    left:20rem;
+    top:68rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+    z-index: 4;
+    background-color: white;
+    overflow: hidden;
+}
+
+#sponsorList img {
+    max-width: 18rem;
+    max-height: 18rem;
+    min-height: 5rem;
+    min-width: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#sponsorList img:hover {
+    opacity: 0.7;
+    background-color: gray;
+}
+
+#sponsorList hr {
+    box-shadow: 0 3.9rem 5rem 3.8rem rgba(245, 245, 245, 0.9)
+}
+
+#sponsorThankYou {
+    text-align: center;
+    font-size: 2.5rem;
+    left:2rem;
+    position: absolute;
+    height:5rem;
+    width:36rem;
+}
+
+#sponsorIntro {
+    font-size: 2rem;
+    font-weight:300;
+    left:2rem;
+    position: absolute;
+    top:5rem;
+    height:20rem;
+}
+
+#sponsorContact{
+    font-size: 1.5rem;
+    left:2rem;
+    position: absolute;
+    top:25rem;
+    height: 10rem;
+}
+
+#sponsorTitle {
+    height:35rem;
+    width:40rem;
+    position: absolute;
+    left:20rem;
+    top: 34rem;
+    z-index: 9;
+    background-color: white;
+}
+
+#sponsorImage {
+    height:35rem;
+    width:40rem;
+    position: absolute;
+    left:60rem;
+    top:34rem;
+    background-color: white;
+    z-index: 7;
+}
+
+#sponsorExampleImage {
+    height: 23rem;
+    width: 30rem;
+    left:7rem;
+    position: absolute;
+    top: 4.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/MarqMitchell.jpg');
+    background-size: contain;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: whitesmoke;
+    transform: rotate(5deg);
+    box-shadow: 0.5rem 0.5rem 0.8rem -0.4rem #808080;
+}
+
+#sponsorImage p {
+    font-size: 1rem;
+    font-style: italic;
+    position: absolute;
+    top:30.5rem;
+    left:4rem;
+    transform: rotate(5deg);
+}
+
+.level {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.team {
+    color: #5E3996;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.competition {
+    color:#85C660;
+    font-size: 1.5rem;
+    margin: 0;
+}
