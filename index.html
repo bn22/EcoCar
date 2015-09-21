@@ -23,7 +23,7 @@
                                                                                                   id="logo"></a>
             </div>
             <div class="collapse navbar-collapse navbar-main-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right" role="tablist" ng-repeat="link in navLinks | orderBy: '-' ">
+                <ul class="nav navbar-nav navbar-right" role="tablist" ng-repeat='link in navLinks | orderBy: "-" '>
                     <li><a href='{{link.url}}'>{{link.name}}</a></li>
                     <!--
                     <li data-menuanchor="2" id="homeMenu"><a href="#/">Home</a></li>
@@ -46,8 +46,7 @@
 <body>
 
 <main>
-    <!-- Temp: Used to push the ng-view to below the nav bar to see if the view works-->
-    <div class="ng-view"></div>
+    <div class="content" ng-view></div>
     <div id="footer">
         <a href="http://www.facebook.com/UWEcoCAR2"><img src="img/Facebook.png"></a>
         <a href="http://www.twitter.com/uwecocar"><img src="img/Twitter.png"></a>

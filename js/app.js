@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('footer').css('top', $(document).height());
     $('#logo').css("height", $('nav').height());
     $('#name').css("height", $('nav').height() / 2);
+    $('.content').css('padding-top', $('.navbar').height() + 10 + 'px'); //Adds padding to ng-view to push it beneath the nav bar
     $(document).on('resize', function() {
         resizeFontSize();
     });
