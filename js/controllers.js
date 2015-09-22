@@ -3,38 +3,45 @@
  */
 "use strict";
 
-var ecoCarApp = angular.module('ecoCarApp', ['ngRoute']);
+var ecoCarApp = angular.module('ecoCarApp', ['ngRoute', 'door3.css']);
 
 ecoCarApp
     .config(function($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'app/home.html',
-                controller: 'homeController'
+                controller: 'homeController',
+                css: 'css/home.css'
             })
             .when('/projects', {
                 templateUrl: 'app/projects.html',
-                controller: 'projectsController'
+                controller: 'projectsController',
+                css: 'css/projects.css'
             })
             .when('/team', {
                 templateUrl: 'app/team.html',
-                controller: 'teamController'
+                controller: 'teamController',
+                css: 'css/team.css'
             })
             .when('/sponsors', {
                 templateUrl: 'app/sponsors.html',
-                controller: 'sponsorsController'
+                controller: 'sponsorsController',
+                css: 'css/sponsors.css'
             })
             .when('/media', {
                 templateUrl: 'app/media.html',
-                controller: 'mediaController'
+                controller: 'mediaController',
+                css: 'css/media.css'
             })
             .when('/ec2', {
                 templateUrl: 'app/ec2.html',
-                controller: 'ec2Controller'
+                controller: 'ec2Controller',
+                css: 'css/ec2.css'
             })
-            .when('/contacts', {
-                templateUrl: 'app/contacts.html',
-                controller: 'contactsController'
+            .when('/contact', {
+                templateUrl: 'app/contact.html',
+                controller: 'contactsController',
+                css: 'css/contact.css'
             });
     })
 
@@ -70,7 +77,7 @@ ecoCarApp
             },
             {
                 name: 'Contact Us',
-                url: '#contacts'
+                url: '#contact'
             }
         ];
     })
