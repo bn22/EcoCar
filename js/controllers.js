@@ -3,7 +3,7 @@
  */
 "use strict";
 
-var ecoCarApp = angular.module('ecoCarApp', ['ngRoute', 'door3.css']);
+var ecoCarApp = angular.module('ecoCarApp', ['ngRoute', 'door3.css', 'ngAnimate']);
 
 ecoCarApp
     .config(function($routeProvider) {
