@@ -11,6 +11,20 @@ $(document).ready(function() {
     //populateSponsorsList();
 });
 
+var hashIndex = window.location.href.indexOf('index.html#');
+var newhref = window.location.href.substr(0, hashIndex); 
+
+$('a').on('click', function() {
+    var href = $(this).attr('href').slice(1);
+    if (href != "") {
+        newhref = newhref + 'pages/' + href + '.html';
+    } 
+    else {
+        newhref = newhref + 'pages/home.html';
+    }
+    $('.content').load(newhref);
+});
+
 $(window).resize(function() {
    resizeFontSize();
 });
