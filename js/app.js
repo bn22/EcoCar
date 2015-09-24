@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('footer').css('top', $(document).height());
     $('#logo').css("height", $('nav').height());
     $('#name').css("height", $('nav').height() / 2);
-    $('.content').css('padding-top', '5.5rem'); 
+    $('#content').css('padding-top', '5.5rem'); 
     var newhref = window.location.hash.slice(1);
     loadContent(newhref);
     
@@ -24,17 +24,16 @@ $(window).resize(function() {
 });
 
 function loadContent(newhref) {
+    var content = $('#content');
     var hashIndex = window.location.href.indexOf('index.html#');
     var newUrl = window.location.href.substr(0, hashIndex);  
-    newUrl =  newUrl + '/pages/' + (newhref !== '' ?  newhref : 'home') + '.html' ;
-
+    newUrl += '/pages/' + (newhref !== '' ?  newhref : 'home') + '.html' ;
     $('link[rel=stylesheet]:not([href*=main],[href*=bootstrap])').remove();
-    
     $('<link/>').attr({
         href: 'css/' + (newhref !== '' ?  newhref : 'home') + '.css',
         rel: 'stylesheet'
     }).appendTo("head");
-    $('.content').load(newUrl);    
+    content.load(newUrl);    
 };
 
 function resizeFontSize() {
@@ -56,7 +55,7 @@ function resizeFontSize() {
     }
     //$('#logo').css("height", nav.height()); //looks unesscary; bootstrap nav does not appear to change size upon resize
     //$('#name').css("height", nav.height() / 2); //looks unesscary; bootstrap nav does not appear to change size upon resize
-    $('.content').css('font-size', window.rem); //changed to .content to prevent changing the font-size of the nav bar
+    $('#content').css('font-size', window.rem); //changed to .content to prevent changing the font-size of the nav bar
 }
 
 function populateSponsorsList() {

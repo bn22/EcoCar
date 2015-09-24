@@ -60,7 +60,7 @@ body {
 }
 
 /*Resizes based on the window*/
-.content {
+#content {
     width: 100vw;
     height: 56.25vw;
     max-height: 100vh;
