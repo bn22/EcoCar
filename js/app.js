@@ -4,30 +4,38 @@ $(document).ready(function() {
     $('footer').css('top', $(document).height());
     $('#logo').css("height", $('nav').height());
     $('#name').css("height", $('nav').height() / 2);
-    $('.content').css('padding-top', '5.5rem'); //Adds padding to ng-view to push it beneath the nav bar
+    $('.content').css('padding-top', '5.5rem'); 
+    var newhref = window.location.hash.slice(1);
+    loadContent(newhref);
+    
     $(document).on('resize', function() {
         resizeFontSize();
     });
     //populateSponsorsList();
 });
 
-var hashIndex = window.location.href.indexOf('index.html#');
-var newhref = window.location.href.substr(0, hashIndex); 
-
-$('a').on('click', function() {
-    var href = $(this).attr('href').slice(1);
-    if (href != "") {
-        newhref = newhref + 'pages/' + href + '.html';
-    } 
-    else {
-        newhref = newhref + 'pages/home.html';
-    }
-    $('.content').load(newhref);
+$('.nav a').on('click', function() {
+    var newhref = $(this).attr('href').slice(1);
+    loadContent(newhref);
 });
 
 $(window).resize(function() {
    resizeFontSize();
 });
+
+function loadContent(newhref) {
+    var hashIndex = window.location.href.indexOf('index.html#');
+    var newUrl = window.location.href.substr(0, hashIndex);  
+    newUrl =  newUrl + '/pages/' + (newhref !== '' ?  newhref : 'home') + '.html' ;
+
+    $('link[rel=stylesheet]:not([href*=main],[href*=bootstrap])').remove();
+    
+    $('<link/>').attr({
+        href: 'css/' + (newhref !== '' ?  newhref : 'home') + '.css',
+        rel: 'stylesheet'
+    }).appendTo("head");
+    $('.content').load(newUrl);    
+};
 
 function resizeFontSize() {
     var body = $('body');
