@@ -55,7 +55,9 @@ ecoCarApp
     })
 
     .controller('sponsorsController', function($scope) {
-
+        for (var i = 0; i < sponsorsList.length; i++) {
+            $('#' + sponsorsList[i].level).append('<a href="' + sponsorsList[i].website + '"><img src="' + sponsorsList[i].logo + '"></a>');
+        }
     })
 
     .controller('mediaController', function($scope) {
