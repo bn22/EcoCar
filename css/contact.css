@@ -1,0 +1,53 @@
+#contactUs {
+    position: absolute;
+    top: 4rem;
+    left: 20rem;
+    width: 80rem;
+    height: 100%;
+}
+
+#contactHeaderImage {
+    position: absolute;
+    width: 80rem;
+    height: 27rem;
+}
+
+#contactText {
+    position: absolute;
+    top: 27rem;
+    background-color: white;
+    width: 80rem;
+    height: 33rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+}
+
+#contactTitle {
+    top: 6rem;
+    width: 38rem;
+    font-size: 2.5rem;
+    height:5rem;
+    left: 4rem;
+    position: absolute;
+}
+
+#contactContent {
+    top: 12rem;
+    width: 38rem;
+    left: 4rem;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+#contactPhoto {
+    height: 24rem;
+    width: 30rem;
+    left:45rem;
+    position: absolute;
+    top: 31rem;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: whitesmoke;
+    transform: rotate(5deg);
+    box-shadow: 0.5rem 0.5rem 0.8rem -0.4rem #808080;
+}

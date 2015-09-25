@@ -32,8 +32,8 @@ ecoCarApp
                 templateUrl: 'app/ec2.html',
                 controller: 'ec2Controller'
             })
-            .when('/contacts', {
-                templateUrl: 'app/contacts.html',
+            .when('/contact', {
+                templateUrl: 'app/contact.html',
                 controller: 'contactsController'
             });
     })
