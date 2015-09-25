@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
-/*@import url(sponsors.css);*/
+@import url(contact.css);
+@import url(ec2.css);
+@import url(home.css);
+@import url(media.css);
+@import url(projects.css);
+@import url(sponsors.css);
+@import url(team.css);
 
 body {
     font-family: "Open Sans",arial,sans-serif;

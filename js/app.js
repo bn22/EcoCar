@@ -29,12 +29,7 @@ function loadContent(newhref) {
     var newUrl = window.location.href.substr(0, hashIndex);  
     newUrl += '/pages/' + (newhref !== '' ?  newhref : 'home') + '.html' ;
     content.hide();
-    $('link[rel=stylesheet]:not([href*=main],[href*=bootstrap])').remove();
-    $('<link/>').attr({
-        href: 'css/' + (newhref !== '' ?  newhref : 'home') + '.css',
-        rel: 'stylesheet'
-    }).appendTo("head");
-    content.load(newUrl).fadeIn(500);
+    content.load(newUrl).fadeIn(750);
 };
 
 function resizeFontSize() {
